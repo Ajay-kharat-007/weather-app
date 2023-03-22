@@ -12,10 +12,9 @@ export class AppComponent {
 
   constructor(private weatherService: WeatherServiceService) { }
 
-  getData(city:any) {
+  getData(city: any) {
     this.weatherService.getWeatherData(city).subscribe(data => {
-      console.log(data)
-      this.weatherData = data;
+      this.weatherData = data
     });
   }
 }

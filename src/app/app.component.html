@@ -6,8 +6,7 @@
   </div>
 </div>
 
-<div class="box">
-  <div *ngIf="weatherData">
+<div class="box" *ngIf="weatherData">
     <p> <b>City Name : </b>{{weatherData.name}}</p>
     <p> <b>Tempreture : </b>{{weatherData.main.temp}}°C</p>
     <p> <b>Min Tempreture : </b>{{weatherData.main.temp_min}}°C</p>
@@ -16,5 +15,4 @@
     <p> <b>Humidity : </b>{{weatherData.main.humidity}}g.m-3</p>
     <p> <b>Wind Speed : </b>{{weatherData.wind.speed}}m/s</p>
     <p> <b>Country : </b>{{weatherData.sys.country}}</p>
-  </div>
 </div>
